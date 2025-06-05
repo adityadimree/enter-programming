@@ -1,0 +1,10 @@
+def f1(num):
+    def f2(x):
+        return x**num
+    return f2
+
+f = f1(2)
+g = f1(3)
+
+print(f(3))
+print(g(3))
